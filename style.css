@@ -21,7 +21,7 @@ form{
 }
 
 form input{
-    width: 800px;
+    width:600px;
     height: 60px;
     outline: 0;
     border: 0;
@@ -99,7 +99,7 @@ form button{
 #message p{
     font-size: 50px;
     color: gray;
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
     line-height: 100px;
     animation: light 4s infinite ease-in-out;
 }
@@ -125,7 +125,39 @@ form button{
     }
 }
 
-.autocomplete-items{
-    background-color: black;
-    color: white;
+input::content{
+    background-color: BLACK;
+}
+
+@media (max-width: 700px){
+    form input{
+        width: 500px
+    }
+}
+
+@media (max-width: 600px){
+    form{
+        padding: 0 20px;
+    }
+    form input{
+        max-width: 600px;
+    }
+    form button{
+        padding-right: 10px;
+    }
+    #message p{
+        font-size: 30px;
+    }
+}
+@media (max-width: 500px){
+    form input{
+        max-width: 200px;
+        padding-left: 20px;
+    }
+    form button{
+        padding-right: 10px;
+    }
+    #message p{
+        font-size: 20px;
+    }
 }
